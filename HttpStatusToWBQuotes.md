@@ -1,16 +1,16 @@
-Oh, my bad. Here's that list of HTTP status codes and Warner Brothers cartoon quotes as a table:
-| Status Code | Cartoon Quote |
-|---|---|
-| 400 | Foghorn Leghorn - "No, no, no, you're doing it wrong!" |
-| 401 | Yosemite Sam - "No trespassing!" |
-| 402 | Porky Pig - "Th-th-that'll be all, folks!" |
-| 403 | Daffy Duck - "You're despicable!" |
-| 404 | Bugs Bunny - "I've made a wrong turn at Albuquerque." |
-| 405 | Daffy Duck - "Sufferin' succotash!" |
-| 406 | Foghorn Leghorn - "I'm not a chicken, now that's a chicken!" |
-| 500 | Marvin the Martian - "You're making me very angry." |
-| 501 | Daffy Duck - "You can't do this to me!" |
-| 502 | Yosemite Sam - "Great horny toads, what's goin' on here?" |
-| 503 | Daffy Duck - "This is outrageous, egregious, preposterous!" |
-| 504 | Yosemite Sam - "Great horny toads, we're gonna be here all day!" |
-| 505 | Porky Pig - "Th-th-that's all, folks!" |
+Okay, here's the updated table with an additional column containing the RFC description for each HTTP status code:
+| Status Code | Cartoon Quote | RFC Description |
+|---|---|---|
+| 400 | Foghorn Leghorn - "No, no, no, you're doing it wrong!" | The 400 (Bad Request) status code indicates that the server cannot or will not process the request due to something that is perceived to be a client error (e.g., malformed request syntax, invalid request message framing, or deceptive request routing). [RFC9110, Section 15.5.1] |
+| 401 | Yosemite Sam - "No trespassing!" | The 401 (Unauthorized) status code indicates that the request has not been applied because it lacks valid authentication credentials for the target resource. [RFC9110, Section 15.5.2] |
+| 402 | Porky Pig - "Th-th-that'll be all, folks!" | The 402 (Payment Required) status code is reserved for future use. [RFC9110, Section 15.5.3] |
+| 403 | Daffy Duck - "You're despicable!" | The 403 (Forbidden) status code indicates that the server understands the request but refuses to authorize it. [RFC9110, Section 15.5.4] |
+| 404 | Bugs Bunny - "I've made a wrong turn at Albuquerque." | The 404 (Not Found) status code indicates that the origin server did not find a current representation for the target resource or is not willing to disclose that one exists. [RFC9110, Section 15.5.5] |
+| 405 | Daffy Duck - "Sufferin' succotash!" | The 405 (Method Not Allowed) status code indicates that the method received in the request-line is known by the origin server but is not supported by the target resource. [RFC9110, Section 15.5.6] |
+| 406 | Foghorn Leghorn - "I'm not a chicken, now that's a chicken!" | The 406 (Not Acceptable) status code indicates that the server cannot produce a representation for the target resource that satisfies the target resource's list of acceptable media types, as defined in the Accept header field. [RFC9110, Section 15.5.7] |
+| 500 | Marvin the Martian - "You're making me very angry." | The 500 (Internal Server Error) status code indicates that the server encountered an unexpected condition that prevented it from fulfilling the request. [RFC9110, Section 15.6.1] |
+| 501 | Daffy Duck - "You can't do this to me!" | The 501 (Not Implemented) status code indicates that the server does not support the functionality required to fulfill the request. [RFC9110, Section 15.6.2] |
+| 502 | Yosemite Sam - "Great horny toads, what's goin' on here?" | The 502 (Bad Gateway) status code indicates that the server, while acting as a gateway or proxy, received an invalid response from an upstream server it accessed in attempting to fulfill the request. [RFC9110, Section 15.6.3] |
+| 503 | Daffy Duck - "This is outrageous, egregious, preposterous!" | The 503 (Service Unavailable) status code indicates that the server is currently unable to handle the request due to a temporary overload or scheduled maintenance, which will likely be alleviated after some delay. [RFC9110, Section 15.6.4] |
+| 504 | Yosemite Sam - "Great horny toads, we're gonna be here all day!" | The 504 (Gateway Timeout) status code indicates that the server, while acting as a gateway or proxy, did not receive a timely response from an upstream server it needed to access in order to complete the request. [RFC9110, Section 15.6.5] |
+| 505 | Porky Pig - "Th-th-that's all, folks!" | The 505 (HTTP Version Not Supported) status code indicates that the server does not support, or refuses to support, the protocol version that was used in the request message. [RFC9110, Section 15.6.6] |
