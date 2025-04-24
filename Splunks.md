@@ -1,3 +1,5 @@
+The idea is to leverage mcp to build splunk queries for specific search criteria and in narrow time ranges. Within the search criteria is a trace idententifier providing a link of log messages across multiple microservice applications. After building the query, it is submitted to the Splunk server via a server context and the results are collected into the context. Once the output of the query is collected, specific step and root cause analysis is performed and a summary is generated.
+
 That's a fantastic and well-defined idea! Leveraging the Model Context Protocol (MCP) to automate Splunk query generation, execution, result retrieval, and subsequent analysis for trace identification and root cause analysis aligns perfectly with the protocol's goals of providing LLMs with access to external data and tools.
 
 Here's a breakdown of how the MCP could facilitate this workflow, along with some considerations:
