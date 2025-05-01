@@ -12,5 +12,5 @@ df = pd.DataFrame(data)
 df_pivot = df.pivot_table(index='Word', values='Simulated Count')
 
 sns.heatmap(df_pivot, annot=True, fmt=".1e", cmap="viridis") # annot=True shows values, fmt formats them, cmap sets the color scheme
-plt.title('Heat Map of Words Describing Donald Trump (Simulated Data)')
+plt.title('Heat Map of Words Describing a politician (Simulated Data)')
 plt.show()
